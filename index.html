@@ -3,28 +3,48 @@
   <head>
     <title>Mis Plantas</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
   </head>
+
   <body>
-    <h2>PLANTAS EN MI JARDIN</h2>
-    <p>Bienvenido a esta página donde estaré mostrando mis plantas
-    que tengo en mi jardín, les voy a poner nombres de acuerdo a su apariencia
-    asi que no te sorprendas, además recibirá la siguiente clasificación:</p>
+    <div class="menu">
+      <button class="b-menu" type="button" name="inicio" id="inicio"><a href="index.html">INICIO</a></button>
+      <button class="b-menu" type="button" name="datos" id="datos"><a href="datos.html">DATOS</a></button>
+      <h1 class="titulo"> PLANTAS EN MI JARDIN </h1>
+    </div>
 
-    <button type="button" name="flor"><h4>Las Flores</h4></button>
-    <button type="button" name="espinas"><h4>Las Espinas</h4></button>
-    <button type="button" name="fruto"><h4>Los Frutos</h4></button>
-    <button type="button" name="hierba"><h4>Las Hierbas</h4></button>
-    <br>
-    <input type="text" name="" value="" placeholder="correo email">
-    <input type="password" name="" value="" placeholder="Contraseña">
-    <button type="button" name="button">Entrar</button>
+    <div class="intro">
+      <p>Bienvenido a esta página donde estaré mostrando mis plantas
+      que tengo en mi jardín, les voy a poner nombres de acuerdo a su apariencia
+      asi que no te sorprendas, hacer click en el siguiente menu para ver las imágenes
+      según su clasificación.</p>
+    </div>
 
-    <h3>01. Flor Dormilona Rosada</h3>
-    <img src="image/flor01_a.jpg" width="350">
-    <img src="image/flor01_b.jpg" width="350">
-    <img src="image/flor01_c.jpg" width="350"> <br>
+    <div class="plantas">
+      <button type="button" name="flores" id="plantas"><a href="flores.html">Las Flores</a> </button>
+      <button type="button" name="espinas" id="plantas"><a href="espinas.html">Las Espinas</a></button>
+      <button type="button" name="frutos" id="plantas"><a href="frutos.html">Los Frutos</a></button>
+      <button type="button" name="hierbas" id="plantas"><a href="hierbas.html">Las Hierbas</a></button>
+    </div>
 
-    <a href="https://www.facebook.com/namuhton"><button>Facebook</button> </a>
+    <div class="contenido">
+      <h3>Flor Dormilona Rosada</h3>
+      <img src="image/flor01_a.jpg" width="350">
+      <img src="image/flor01_b.jpg" width="350">
+      <img src="image/flor01_c.jpg" width="350">
+    </div>
+
+    <div class="comentario">
+      <input type="text" name="" value="" placeholder="Usuario">
+      <input type="text" name="" value="" placeholder="Comentario">
+      <button type="button" name="button">Enviar</button>
+    </div>
+
+    <div class="redes">
+      <a href="https://www.facebook.com/namuhton"><button>Facebook</button> </a>
+    </div>
+
+    <input type="color" name="" value="">
 
   </body>
 </html>
