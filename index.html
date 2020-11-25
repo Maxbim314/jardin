@@ -8,43 +8,45 @@
 
   <body>
     <div class="menu">
-      <button class="b-menu" type="button" name="inicio" id="inicio"><a href="index.html">INICIO</a></button>
-      <button class="b-menu" type="button" name="datos" id="datos"><a href="datos.html">DATOS</a></button>
-      <h1 class="titulo"> PLANTAS EN MI JARDIN </h1>
+      <button class="b-menu" type="button" name="inicio" id="inicio"><a id="botontop" href="index.html">INICIO</a></button>
+      <button class="b-menu" type="button" name="datos" id="datos"><a id="botontop" href="datos.html">DATOS</a></button><br>
+      <p class="titulo"> PLANTAS EN MI JARDIN </p>
     </div>
 
     <div class="intro">
-      <p>Bienvenido a esta página donde estaré mostrando mis plantas
+      <p>Bienvenidos a esta página donde estaré mostrando mis plantas
       que tengo en mi jardín, les voy a poner nombres de acuerdo a su apariencia
-      asi que no te sorprendas, hacer click en el siguiente menu para ver las imágenes
+      asi que no te sorprendas, y puedes hacer click en el siguiente menu para ver las imágenes
       según su clasificación.</p>
     </div>
 
     <div class="plantas">
-      <button type="button" name="flores" id="plantas"><a href="flores.html">Las Flores</a> </button>
-      <button type="button" name="espinas" id="plantas"><a href="espinas.html">Las Espinas</a></button>
-      <button type="button" name="frutos" id="plantas"><a href="frutos.html">Los Frutos</a></button>
-      <button type="button" name="hierbas" id="plantas"><a href="hierbas.html">Las Hierbas</a></button>
+      <button type="button" name="flores" id="plantas"><a id="botonbot" href="flores.html">Las Flores</a> </button>
+      <button type="button" name="espinas" id="plantas"><a id="botonbot" href="espinas.html">Las Espinas</a></button>
+      <button type="button" name="frutos" id="plantas"><a id="botonbot" href="frutos.html">Los Frutos</a></button>
+      <button type="button" name="hierbas" id="plantas"><a id="botonbot" href="hierbas.html">Las Hierbas</a></button>
     </div>
 
     <div class="contenido">
-      <h3>Flor Dormilona Rosada</h3>
-      <img src="image/flor01_a.jpg" width="350">
-      <img src="image/flor01_b.jpg" width="350">
-      <img src="image/flor01_c.jpg" width="350">
+      <p id="contenido"> EL JARDÍN </p>
+      <img src="image/flores.jpg" id="flor">
     </div>
 
     <div class="comentario">
-      <input type="text" name="" value="" placeholder="Usuario">
-      <input type="text" name="" value="" placeholder="Comentario">
-      <button type="button" name="button">Enviar</button>
+      <p id="comentario">SECCIÓN DE COMENTARIOS Y SUGERENCIAS DE NOMBRES</p>
+      <p id="comentar">Aquí puedes dejar un comentario:</p>
+      <p id="addComentario"></p>
+      <input id="nombre" type="text" name="" value="" placeholder="Nombre" > <br>
+      <textarea id="sugerencia" name="comentario" rows="5" cols="50" placeholder="Escribe tu comentario"></textarea>
+      <button type="button" name="button" onclick="enviar()" >Enviar</button>
     </div>
 
     <div class="redes">
-      <a href="https://www.facebook.com/namuhton"><button>Facebook</button> </a>
+      <a  href="https://www.facebook.com/namuhton"><button id="facebook">Facebook</button> </a>
+      <a  href="#"><button id="telegram"> Telegram </button> </a>
+      <a  href="#"><button id="whatsapp"> WhastApp </button> </a>
     </div>
 
-    <input type="color" name="" value="">
-
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
